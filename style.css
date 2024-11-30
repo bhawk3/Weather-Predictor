@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(130, 11, 227);
+}
+
+.descriptiveText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(25, 243, 148, 0.545);
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 15px 25px 15px 25px;
+}
+
+h1 {
+    font-family: mogra;
+    font-size: 3rem;
+}
+
+.date-input {
+    margin: auto;
+}
+
+button {
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px 20px 5px 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Project description
+Name: Weather Predictor
+
+User inputs a date in mm/dd/yyyy format. From there a weather icon will display
+with the weather prediction for the entered date. One thing to keep in mind is
+the seasons. It will probably be best to start by checking if the entered date 
+is a snowy month first because there are more non-snowy months.
+
+snowy months: November, December, January, February, March
+non-snowy months: April, May, June, July, August, September, October
+-->
+
+
+<head>
+    <title>Weather Predictor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Google Font Mogra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="descriptiveText">
+        <h1>Weather Predictor</h1>
+        <p>Hello! Have you ever wondered what the weather was going to be? 
+    Type in a date to see the weather prediction!</p>
+
+    <!--Might need to change input type="date" to type="text" or something else
+    Not sure if you can access the date input from this type-->
+    
+    <input id="date-input" type="text" placeholder="Type in a date mm/dd/yyyy"><br>
+    <button id="submit-btn" type="submit">Predict</button>
+    <p id="output-section"></p>
+    
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
