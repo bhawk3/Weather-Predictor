@@ -26,7 +26,6 @@ let imgTag = document.createElement('img')
 
 submitBtn.addEventListener("click", function() {
     const dateInput = document.getElementById("date-input").value //this is a string
-
     let date = new Date(dateInput)
     let userDate = months[date.getMonth()]
     let finalDate = months.indexOf(userDate)
@@ -37,13 +36,12 @@ submitBtn.addEventListener("click", function() {
 
     if (finalDate <= -1) {
        let userInput = document.createElement("p")
-       userInput.innerHTMLtextContent = "Please select a date."
+       outputSection.textContent = "Please select a date."
        return userInput;
     } else if (finalDate >= 3 && finalDate <= 9 ) {
         //console.log("non-snowy month")
         imgTag.src = `${nonSnowyMonthsImages[randomNotSnowy]}`
         outputSection.appendChild(imgTag)
-
     } else {
         //console.log("snowy month")
         imgTag.src = `${snowyMonthsImages[randomSnowy]}`
