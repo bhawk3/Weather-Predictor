@@ -35,9 +35,7 @@ submitBtn.addEventListener("click", function() {
     let randomNotSnowy = Math.floor(Math.random() * nonSnowyMonthsImages.length)
 
     if (finalDate <= -1) {
-       let userInput = document.createElement("p")
        outputSection.textContent = "Please select a date."
-       return userInput;
     } else if (finalDate >= 3 && finalDate <= 9 ) {
         //console.log("non-snowy month")
         imgTag.src = `${nonSnowyMonthsImages[randomNotSnowy]}`
